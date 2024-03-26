@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 1.2px;
+        padding: 1.2px;
+      }
+
+      li:first-child {
+        color: salmon;
+      }
+
+      li:last-child {
+        color: green;
+      }
+
+      li:nth-child(2n+1) {
+        color: slateblue;
+      }
+
+      h3:hover {
+        background-color: salmon;
+        color: white;
+      }
+
+      button:hover {
+        background-color: salmon;
+        color: white;
+      }
+
+      .af p:hover::before {
+        content: "Highlightfore ";
+        color: salmon;
+        font-size: 20px;
+      }
+
+      .af p::after {
+        content: " Highlight";
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="af">
+      <p>Lorem ipsum.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <button>Click me</button>
+
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, alias?</h3>
+
+    <br>
+    <br>
+    <br>
+
+    <ul>
+      <li>Lorem ipsum dolor sit amet.</li>
+      <li>Quibusdam vel aliq voluptatum perspiciatis?</li>
+      <li>Molestiae a dolores sunt repudiandae.</li>
+      <li>Veritatis autem sapiente dolor. Delectus!</li>
+      <li>Unde sapiente eius illo similique.</li>
+    </ul>
+
+  </body>
+
+</html>
